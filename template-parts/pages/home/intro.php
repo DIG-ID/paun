@@ -1,4 +1,4 @@
-<section class="section-intro py-16 xl:py-32 lg:border-b border-solid overflow-hidden">
+<section class="section-intro py-16 xl:py-32 bg-bg-color overflow-hidden">
 	<div class="lg:container mx-auto px-8 grid grid-cols-1 md:grid-cols-12">
 		<div class="col-span-1 md:col-span-5 lg:col-span-4">
 			<h2 class="title-normal !font-normal"><?php the_field( 'intro_title' ); ?></h2>
