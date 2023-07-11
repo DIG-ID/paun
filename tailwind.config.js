@@ -19,7 +19,7 @@ module.exports = {
       'black': '#000000',
     },
     fontFamily: {
-      sans: ['Montserrat', 'sans-serif'],
+      sans: ['Roboto Flex', 'sans-serif'],
     },
 
     extend: {
