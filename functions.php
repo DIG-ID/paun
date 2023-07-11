@@ -315,6 +315,27 @@ add_filter( 'post_thumbnail_html', 'paun_wrap_post_thumbnail_in_figure', 10, 5 )
 // Remove <p> from Contact Form 7
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
+/**
+ * Create a customized options page and store the data in a variable for later use
+ */
+function chasseral_theme_acf_op_gc_init() {
+	if ( function_exists( 'acf_add_options_page' ) ) :
+		$theme_option_page = acf_add_options_page(
+			array(
+				'page_title'      => __( 'Paun Theme Options', 'paun' ),
+				'menu_title'      => __( 'Paun Theme', 'paun' ),
+				'menu_slug'       => 'paun-theme-general-options',
+				'capability'      => 'edit_posts',
+				'icon_url'        => 'dashicons-admin-appearance',
+				'redirect'        => false,
+				'update_button'   => __( 'Update Theme Options', 'paun' ),
+				'updated_message' => __( 'Paun Theme Options Updated', 'paun' ),
+			)
+		);
+	endif;
+}
+
+add_action( 'acf/init', 'chasseral_theme_acf_op_gc_init' );
 
 // Theme customizer options.
 require get_template_directory() . '/inc/customizer.php';

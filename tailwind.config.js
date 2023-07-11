@@ -9,11 +9,12 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'main-green': '#00944E',
+      'main-green': '3D4F48',
       'main-blue': '#0071BA',
       'main-red': '#D12329',
-      'bg-color': '#EFF3F6',
-      'text-grey': '#6A6A6A',
+      'bg-color': '#3D4F48',
+      'text-color': '#FEFAE0',
+      'text-grey': '#FEFAE0',
       'white': '#FFFFFF',
       'black': '#000000',
     },
