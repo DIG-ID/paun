@@ -26,7 +26,7 @@ add_action( 'socials', 'paun_theme_socials' );
  */
 function paun_theme_before_main_content() {
 	?>
-	<main id="main-content" class="main-content">
+	<main id="main-content" class="main-content bg-main-green">
 	<?php
 }
 

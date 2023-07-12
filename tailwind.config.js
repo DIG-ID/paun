@@ -9,7 +9,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'main-green': '3D4F48',
+      'main-green': '#3D4F48',
       'main-blue': '#0071BA',
       'main-red': '#D12329',
       'bg-color': '#3D4F48',
