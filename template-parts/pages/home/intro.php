@@ -5,8 +5,8 @@
 		</div>
 	</div>
 	<div class="container mx-auto pb-16 px-8 grid grid-cols-1 md:grid-cols-12">
-		<div class="col col-span-1 lg:col-span-6">
-			<a href="" class="" type="button"></a>
+		<div class="col col-span-1 lg:col-span-6 pt-2">
+			<a href="<?php the_field( 'settings_order_button_url', 'option' ); ?>" class="text-button inline-flex items-center border-text-color border-2 rounded-full px-8 py-2" type="button"><?php esc_html_e( 'Jetzt bestellen', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></a>
 		</div>
 		<div class="col col-span-1 lg:col-span-6">
 			<h2 class="text-body columns-2"><?php the_field( 'section_intro_head_text' ); ?></h2>
