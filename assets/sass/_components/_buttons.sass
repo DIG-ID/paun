@@ -1,8 +1,12 @@
 .btn
-  &-general
-    @apply uppercase border border-solid border-[#1e1e1e] px-2 lg:px-8 py-4 font-bold text-base uppercase text-center w-full lg:w-auto max-w-[330px] transition-all duration-300 ease-in hover:bg-white mb-4 block
+  &-order
+    @apply text-button inline-flex items-center border-text-color border-2 rounded-full transition-all duration-200 ease-in
     &:hover
-      @apply bg-main-red text-white
-      svg > path
-          transition: fill .4s ease-in-out
-          fill: white
+      @apply bg-[#35453F]
+  &-moreinfo
+    span
+      padding-bottom: 0px
+      @apply border-b-2 border-main-green
+    &:hover
+      span
+        @apply border-text-color

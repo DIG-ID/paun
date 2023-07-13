@@ -25,7 +25,7 @@
 		</div>
         <div class="col col-span-1 lg:col-span-3">
 			<p class="text-bigger mb-20"><?php the_field( 'section_popupstore_order_text' ); ?></p>
-            <a href="<?php the_field( 'settings_order_button_url', 'option' ); ?>" class="text-button inline-flex items-center border-text-color border-2 rounded-full px-8 py-2" type="button"><?php esc_html_e( 'Jetzt bestellen', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></a>
+            <a href="<?php the_field( 'settings_order_button_url', 'option' ); ?>" class="btn-order px-8 py-2" type="button"><?php esc_html_e( 'Jetzt bestellen', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></a>
 		</div>
 	</div>
 </section>

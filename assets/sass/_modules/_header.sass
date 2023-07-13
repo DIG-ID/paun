@@ -1,6 +1,16 @@
 .main-menu-top-level
     .menu-item
         @apply text-text-color ml-6 font-semibold text-xl uppercase
+        a
+            @apply border-b-2 border-main-green
+            &:hover
+                @apply border-text-color
+        &.disabled
+            @apply opacity-25
+            a
+                @apply cursor-default
+                &:hover
+                    @apply border-main-green
 
 .menu-footer
     .menu-item
