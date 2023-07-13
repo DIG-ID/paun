@@ -12,8 +12,13 @@
 	</div>
 
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-9 pt-4">
-		<div class="col col-span-1 lg:col-span-3">
-			<p class="text-bigger"><?php the_field( 'section_popupstore_schedule' ); ?></p>
+		<div class="col col-span-1 lg:col-span-3 grid grid-cols-4">
+            <div class="col-span-1 pr-3 pt-5">
+            	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-notarrow.svg">
+			</div>
+			<div class="col-span-3">
+            	<p class="text-bigger"><?php the_field( 'section_popupstore_schedule' ); ?></p>
+			</div>
 		</div>
         <div class="col col-span-1 lg:col-span-3 px-8">
 			<p class="text-body"><?php the_field( 'section_popupstore_description' ); ?></p>
