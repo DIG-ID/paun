@@ -6,7 +6,7 @@
             </div>
             <div class="row-span-1 grid grid-cols-2 lg:gap-4">
                 <div class="col-span-1">
-			        <p class="text-bigger"><?php the_field( 'section_unser_antrieb_subtitle' ); ?></p>
+			        <p class="title-subtitle lg:max-w-md"><?php the_field( 'section_unser_antrieb_subtitle' ); ?></p>
                 </div>
                 <div class="col-span-1 lg:pr-12">
 			        <p class="text-body"><?php the_field( 'section_unser_antrieb_description' ); ?></p>

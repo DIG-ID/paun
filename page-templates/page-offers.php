@@ -5,9 +5,7 @@
 
 get_header();
 	do_action( 'before_main_content' );
-		do_action( 'breadcrumbs' );
-		get_template_part( 'template-parts/pages/page/header' );
-		get_template_part( 'template-parts/pages/contact/contacts' );
-		get_template_part( 'template-parts/pages/contact/map' );
+		get_template_part( 'template-parts/pages/offers/intro' );
+		get_template_part( 'template-parts/pages/offers/angebote' );
 	do_action( 'after_main_content' );
 get_footer();

@@ -6,7 +6,7 @@
     </div>
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-12">
         <div class="col col-span-1 lg:col-span-6 lg:col-start-4">
-			<h3 class="text-bigger text-center"><?php the_field( 'section_newsletter_description' ); ?></h3>
+			<h3 class="text-bigger text-center max-w-[30rem] mx-auto"><?php the_field( 'section_newsletter_description' ); ?></h3>
 		</div>
     </div>
 </section>

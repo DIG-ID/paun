@@ -59,6 +59,7 @@ if ( ! function_exists( 'paun_get_font_face_styles' ) ) :
 	 * Called by functions dig_theme_enqueue_styles() and twentytwentytwo_editor_styles() above.
 	 */
 	function paun_get_font_face_styles() {
+		wp_enqueue_style( 'custom-styles', get_stylesheet_directory_uri() . '/assets/fonts/PPCirka-fonts.css' );
 		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@200;300&display=swap', false );
 	}
 

@@ -20,6 +20,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Roboto Flex', 'sans-serif'],
+      titles: ['PPCirka-Light', 'sans-serif'],
     },
 
     extend: {

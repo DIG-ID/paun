@@ -1,6 +1,17 @@
+//logo global
+.header
+    &-logo
+        @apply w-28
+
+//logo in homepage
+.home
+    .header
+        &-logo
+            @apply max-w-full w-full
+
 .main-menu-top-level
     .menu-item
-        @apply text-text-color ml-6 font-semibold text-xl uppercase
+        @apply text-text-color ml-6 font-titles font-semibold text-xl uppercase
         a
             @apply border-b-2 border-main-green
             &:hover
@@ -14,4 +25,4 @@
 
 .menu-footer
     .menu-item
-        @apply text-text-color text-base font-extralight leading-9
+        @apply text-text-color text-base font-sans font-extralight leading-9

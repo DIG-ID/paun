@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'PPCirka-Light';
+    src: url('PPCirka-Light.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PPCirka-Light';
+    src: url('PPCirka-Light.woff2') format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PPCirka-Light';
+    src: url('PPCirka-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPCirka-Light';
+    src: url('PPCirka-Light.eot') format('eot');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPCirka-Light';
+    src: url('PPCirka-Light.otf') format('otf');
+    font-weight: lighter;
+    font-style: normal;
+}

@@ -4,7 +4,7 @@
 		    <h2 class="title-section"><?php the_field( 'section_angebote_section_title' ); ?></h2>
         </div>
     </div>
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 py-28">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 py-24">
 		<div class="col col-span-1 lg:col-span-1 lg:col-start-2 lg:pr-14">
 		    <p class="text-body"><?php the_field( 'section_angebote_description_left_column' ); ?></p>
         </div>
