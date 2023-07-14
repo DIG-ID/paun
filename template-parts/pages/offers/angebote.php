@@ -46,7 +46,7 @@
     </div>
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
         <div class="col-span-1 lg:col-span-9 lg:col-start-4 lg:pl-12">
-            <button data-modal-target="form-popup" data-modal-toggle="form-popup" class="btn-order px-8 py-2" type="button"><?php esc_html_e( 'Anfrage senden', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></button>
+            <button data-modal-target="form-popup" data-modal-toggle="form-popup" class="btn-order" type="button"><?php esc_html_e( 'Anfrage senden', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></button>
         </div>
     </div>
     

@@ -47,6 +47,10 @@
 		</div>
 		<div class="col-span-1 lg:col-span-4">
 			<h3 class="text-text-color font-titles text-3xl"><?php esc_html_e( 'Newsletter' , 'paun' ) ?></h3>
+			<?php 
+			$form_shortcode = get_field('settings_newsletter_shortcode', 'option');
+			echo do_shortcode($form_shortcode);
+			?>
 		</div>
 	</div>
 </footer>
