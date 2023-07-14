@@ -44,13 +44,26 @@
             <a href="#" class="text-bigger flex items-center"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
         </div>
     </div>
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
+        <div class="col-span-1 lg:col-span-9 lg:col-start-4 lg:pl-12">
+            <button data-modal-target="form-popup" data-modal-toggle="form-popup" class="btn-order px-8 py-2" type="button"><?php esc_html_e( 'Anfrage senden', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></button>
+        </div>
+    </div>
+    
+    <div id="form-popup" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full bg-main-green p-10">
+            <!-- Modal content -->
+            <h2 class="title-normal"><?php the_title(); ?></h2>
+            <?php 
+			$form_shortcode = get_field('settings_angebote_form_shortcode', 'option');
+			echo do_shortcode($form_shortcode);
+			?>
+        </div>
+    </div>
     <?php endwhile;
     endif;
     wp_reset_postdata();
     ?>
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
-        <div class="col-span-1 lg:col-span-9 lg:col-start-4 lg:pl-12">
-            <a href="<?php the_field( 'settings_order_button_url', 'option' ); ?>" class="btn-order px-8 py-2" type="button"><?php esc_html_e( 'Anfrage senden', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></a>
-        </div>
-    </div>
+    
 </section>
+

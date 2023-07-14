@@ -6,6 +6,7 @@ module.exports = {
     './inc/*.php',
     './page-templates/**/*.php',
     './template-parts/**/*.php',
+    './node_modules/flowbite/**/*.js',
   ],
   theme: {
     colors: {
@@ -32,5 +33,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
+    require('flowbite/plugin'),
   ],
 }

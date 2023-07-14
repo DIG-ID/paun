@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
+    "flowbite": "^1.7.0",
     "gsap": "^3.11.4",
     "isotope-layout": "^3.0.6",
     "swiper": "^9.0.2"
