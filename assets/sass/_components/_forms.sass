@@ -1,26 +1,25 @@
-.section-form
-  .wpcf7
-    .wpcf7-form
-      label
-        @apply block text-sm text-text-grey font-normal uppercase mb-4
-      .wpcf7-form-control-wrap
-        @apply block mb-8
-        .wpcf7-form-control
-          @apply w-full border border-solid border-black p-5
-      .wpcf7-text,
-      .wpcf7-textarea
-        @apply rounded-none text-base font-light text-black focus:outline-1 focus:outline-white focus:rounded-none active:rounded-none focus-visible:rounded-none placeholder:rounded-none
-        &::placeholder
-          @apply rounded-none text-text-grey
-      .wpcf7-submit
-        @apply uppercase border border-solid border-black px-16 py-4 font-bold text-base uppercase text-center transition-all duration-300 ease-in-out float-right
-        &:hover
-          cursor: pointer
-          @apply cursor-pointer bg-white
+.wpcf7
+  @apply max-w-xl
+  .wpcf7-form
+    .wpcf7-form-control-wrap
+      @apply block
+      .wpcf7-form-control
+        @apply w-full border border-solid border-black p-5
+    .wpcf7-text
+      @apply rounded-full text-base font-light text-black focus:outline-1 focus:outline-white bg-text-color
+    .wpcf7-textarea
+      @apply rounded-[3rem] text-base font-light text-black focus:outline-1 focus:outline-white bg-text-color
+      &::placeholder
+        @apply rounded-none text-text-grey
+    .wpcf7-submit
+      @apply text-button inline-flex items-center border-text-color border-2 rounded-full transition-all duration-200 ease-in px-8 py-2 float-right
+      &:hover
+        cursor: pointer
+        @apply bg-[#35453F]
 
 
 
-      .wpcf7-not-valid-tip
-        @apply font-sans text-sm mt-3 border border-solid border-main-red inline-block px-5 py-3
-      .wpcf7-response-output
-        @apply m-0 mt-16 p-0 px-5 py-3 border font-sans text-sm
+    .wpcf7-not-valid-tip
+      @apply font-sans text-sm mt-3 border border-solid border-main-red inline-block px-5 py-3
+    .wpcf7-response-output
+      @apply m-0 mt-16 p-0 px-5 py-3 border font-sans text-sm

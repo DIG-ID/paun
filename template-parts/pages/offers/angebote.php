@@ -1,4 +1,4 @@
-<section class="section-angebote-intro pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
+<section class="section-angebote-list pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
     <?php
         $args = array(
         'post_type' => 'angebot',
