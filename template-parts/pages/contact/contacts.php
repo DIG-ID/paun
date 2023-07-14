@@ -1,4 +1,4 @@
-<section class="section-angebote-list pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
+<section class="section-contact pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
 	<div class="container mx-auto grid grid-cols-1 lg:grid-cols-2">
 		<div class="col-span-1">
 			<p class="title-contact"><?php the_field( 'section_details_title' ); ?></p>
