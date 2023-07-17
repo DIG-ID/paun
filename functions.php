@@ -94,6 +94,36 @@ function custom_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'custom_body_classes' );
 
+function enqueue_custom_scripts() {
+	wp_enqueue_script('custom-pagination', get_template_directory_uri() . '/assets/js/custom-pagination.js', array('jquery'), '1.0', true);
+	wp_localize_script('custom-pagination', 'customPagination', array(
+	  'ajaxUrl' => admin_url('admin-ajax.php'),
+	  'postsPerPage' => 3,
+	));
+  }
+  add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+
+  function load_angebote() {
+	$page = $_POST['page'];
+	$args = array(
+	  'post_type' => 'angebot',
+	  'posts_per_page' => customPagination.postsPerPage,
+	  'paged' => $page,
+	);
+	$query = new WP_Query($args);
+  
+	if ($query->have_posts()) {
+	  while ($query->have_posts()) {
+		$query->the_post();
+		// Display your post content here
+	  }
+	  wp_reset_postdata();
+	}
+  
+	die();
+  }
+  add_action('wp_ajax_load_angebote', 'load_angebote');
+  add_action('wp_ajax_nopriv_load_angebote', 'load_angebote');
 
 /**
  * Enqueue styles and scripts
