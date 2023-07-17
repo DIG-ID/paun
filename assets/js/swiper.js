@@ -8,30 +8,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const agendaEventsSwiper = new Swiper('.swiper-angebote-home', {
         direction: 'horizontal',
-        slidesPerView: 'auto',
-        freeMode: true,
+        slidesPerView: 1,
+        slidesPerGroup :3,
+        grid: {
+          rows: 3,
+          fill: 'row',
+        },
         pagination: {
           el: '.swiper-pagination-angebote',
           clickable: true,
           renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
           },
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-
-      const angebotesSwiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        slidesPerColumn: 3,
-        slidesPerColumnFill: "row",
-        slidesPerGroup: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
         },
       });
 
