@@ -1,45 +1,19 @@
 jQuery(document).ready(function($) {
-  var page = 1;
-  var loading = false;
-  var $angeboteWrapper = $('.angebote-wrapper');
-  
-  function loadPosts() {
-      $.ajax({
-          url: ajaxpagination.ajaxurl,
-          type: 'post',
-          data: {
-              action: 'ajax_pagination',
-              page: page,
-              nonce: ajaxpagination.nonce
-          },
-          beforeSend: function() {
-              loading = true;
-              // Display a loading spinner or message
-              $angeboteWrapper.append('<div class="loading-message">Loading...</div>');
-          },
-          success: function(response) {
-              if (response && response.success) {
-                  var $newPosts = $(response.data.posts);
-                  $angeboteWrapper.append($newPosts);
-                  page++;
-              } else {
-                  // Handle error or end of posts
-              }
-              loading = false;
-              // Remove the loading spinner or message
-              $('.loading-message').remove();
-          },
-          error: function(xhr, textStatus, errorThrown) {
-              // Handle error
-              loading = false;
-              $('.loading-message').remove();
-          }
-      });
-  }
-
-  $(window).scroll(function() {
-      if (!loading && $(window).scrollTop() + $(window).height() >= $angeboteWrapper.offset().top + $angeboteWrapper.outerHeight()) {
-          loadPosts();
-      }
-  });
+    $(window).scroll(function() {
+        var header = $('#header-main');
+        var logo = $('.header-logo');
+        var scrollTop = $(window).scrollTop();
+        var threshold = 300; // Adjust the value (in pixels) as needed
+        var isSticky = header.hasClass('sticky');
+    
+        if (scrollTop > threshold && !isSticky) {
+            header.addClass('sticky');
+            logo.addClass('sticky-logo');
+            logo.removeClass('transition-logo-width');
+        } else if (scrollTop <= threshold && isSticky) {
+            header.removeClass('sticky');
+            logo.removeClass('sticky-logo');
+            logo.addClass('transition-logo-width');
+        }
+    });
 });

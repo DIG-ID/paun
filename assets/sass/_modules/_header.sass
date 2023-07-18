@@ -1,17 +1,24 @@
 //logo global
 .header
     &-logo
+        transition: width 0.3s ease
         @apply w-28
 
 //logo in homepage
 .home
-    .header
-        &-logo
-            @apply max-w-full w-full
+    .header-main
+        .header
+            &-logo
+                @apply max-w-full w-full
+        &.sticky
+            .header
+                &-logo
+                    transition: width 0.3s ease
+                    @apply w-28
 
 .main-menu-top-level
     .menu-item
-        @apply text-text-color ml-6 font-titles font-semibold text-xl uppercase
+        @apply text-white ml-6 font-titles font-semibold text-xl uppercase
         a
             @apply border-b-2 border-main-green
             &:hover
@@ -26,3 +33,18 @@
 .menu-footer
     .menu-item
         @apply text-text-color text-base font-sans font-extralight leading-9
+
+#header-main
+    position: sticky
+    top: 0
+    z-index: 100
+    transition: top 0.3s ease
+
+.transition-logo-width
+    transition: width 0.3s ease
+
+.sticky
+    top: -100px
+
+.sticky-logo
+    width: 7rem

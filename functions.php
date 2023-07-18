@@ -116,6 +116,7 @@ function paun_theme_enqueue_styles() {
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/js/app.js', array( 'jquery' ), $theme_version, false );
+	wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/assets/js/custom-scripts.js', array(), '1.0', true );
 	if ( is_page_template( 'page-templates/page-contact.php' ) || is_admin() ) :
 		wp_enqueue_script( 'google-map-settings', get_stylesheet_directory_uri() . '/assets/js/google-maps.js', array( 'jquery' ), $theme_version, true );
 		wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0&callback=initMap', array(), $theme_version, true );
@@ -127,6 +128,40 @@ function paun_theme_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'paun_theme_enqueue_styles' );
+
+
+// Get latest post from Offers to use in main menu.
+function modify_latest_post_menu_item( $items, $args ) {
+    if ( $args->theme_location === 'main' ) {
+        $post_type = 'angebot';
+        $latest_post = get_posts( array(
+            'post_type'      => $post_type,
+            'posts_per_page' => 1,
+            'orderby'        => 'date',
+            'order'          => 'DESC',
+        ) );
+
+        if ( $latest_post ) {
+            $latest_post_url = get_permalink( $latest_post[0]->ID );
+            $latest_post_item = '<li class="latest-post-menu-item menu-item"><a href="' . esc_url( $latest_post_url ) . '">Angebote</a></li>';
+            
+            // Split the menu items into an array
+            $menu_items = explode( '</li>', $items );
+            
+            // Insert the latest post menu item as the second item
+            array_splice( $menu_items, 1, 0, $latest_post_item );
+            
+            // Convert the array back into a string
+            $items = implode( '</li>', $menu_items );
+        }
+    }
+
+    return $items;
+}
+
+add_filter( 'wp_nav_menu_items', 'modify_latest_post_menu_item', 10, 2 );
+
+
 
 //Google Map Init
 function paun_theme_google_map_init() {
