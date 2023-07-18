@@ -10,7 +10,7 @@
 	</div>
 	<div class="footer-content container mx-auto py-8 grid grid-cols-1 gap-5 lg:grid-cols-10 ">
 		<div class="col-span-1 lg:col-span-3">
-			<h3 class="text-text-color font-titles text-3xl"><?php esc_html_e( 'Kontakt' , 'paun' ) ?></h3>
+			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Kontakt' , 'paun' ) ?></h3>
 			<p class="text-body mt-10">
 				<?php the_field( 'contact_address', 'option' ) ?>
 			</p>
@@ -21,7 +21,7 @@
 			</p>
 		</div>
 		<div class="col-span-1 lg:col-span-3">
-			<h3 class="text-text-color font-titles text-3xl"><?php esc_html_e( 'Pages' , 'paun' ) ?></h3>
+			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Pages' , 'paun' ) ?></h3>
 			<?php
 			wp_nav_menu(
 				array(
@@ -46,7 +46,7 @@
 			?>
 		</div>
 		<div class="col-span-1 lg:col-span-4">
-			<h3 class="text-text-color font-titles text-3xl"><?php esc_html_e( 'Newsletter' , 'paun' ) ?></h3>
+			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Newsletter' , 'paun' ) ?></h3>
 			<?php 
 			$form_shortcode = get_field('settings_newsletter_shortcode', 'option');
 			echo do_shortcode($form_shortcode);

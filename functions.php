@@ -132,7 +132,7 @@ add_action( 'wp_enqueue_scripts', 'paun_theme_enqueue_styles' );
 
 // Get latest post from Offers to use in main menu.
 function modify_latest_post_menu_item( $items, $args ) {
-    if ( $args->theme_location === 'main' ) {
+    if ( $args->theme_location === 'main' || $args->theme_location === 'footer' ) {
         $post_type = 'angebot';
         $latest_post = get_posts( array(
             'post_type'      => $post_type,

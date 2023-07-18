@@ -18,11 +18,12 @@
 
 .main-menu-top-level
     .menu-item
-        @apply text-white ml-6 font-titles font-semibold text-xl uppercase
+        @apply text-white ml-6 font-titles font-semibold text-xl uppercase tracking-[0.2em]
         a
+            padding-left: 3px
             @apply border-b-2 border-main-green
             &:hover
-                @apply border-text-color
+                @apply border-white
         &.disabled
             @apply opacity-25
             a
@@ -32,13 +33,15 @@
 
 .menu-footer
     .menu-item
-        @apply text-text-color text-base font-sans font-extralight leading-9
+        @apply text-text-color text-xs sm:text-sm xl:text-lg font-sans font-extralight tracking-wider leading-9
 
 #header-main
     position: sticky
     top: 0
     z-index: 100
     transition: top 0.3s ease
+    &.sticky
+        border-bottom: 1px solid #29332E
 
 .transition-logo-width
     transition: width 0.3s ease

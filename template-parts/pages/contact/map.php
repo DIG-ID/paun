@@ -1,7 +1,7 @@
 <section class="section-map pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
 	<div class="container mx-auto grid grid-cols-1">
 		<div class="col-span-1">
-			<p class="title-contact !mb-16"><?php the_field( 'section_map_title' ); ?></p>
+			<p class="text-bigger !mb-16"><?php the_field( 'section_map_title' ); ?></p>
 		</div>
 		<div class="col-span-1">
 		<?php
