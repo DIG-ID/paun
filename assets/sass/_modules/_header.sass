@@ -18,7 +18,7 @@
 
 .main-menu-top-level
     .menu-item
-        @apply text-white ml-6 font-titles font-light text-xl uppercase tracking-[0.2em]
+        @apply text-white sm:ml-6 font-titles font-light text-[10px] sm:text-xs lg:text-xl uppercase tracking-[0.2em]
         a
             padding-left: 3px
             @apply border-b border-main-green
@@ -51,3 +51,15 @@
 
 .sticky-logo
     width: 7rem
+
+@media (max-width: 640px)
+    .content-padding-top
+        padding-top: 130px
+
+    .sticky
+        .header-logo-wrapper
+            @apply hidden
+
+@media (max-width: 440px)
+    .content-padding-top
+        padding-top: 150px
