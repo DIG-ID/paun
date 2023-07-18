@@ -4,7 +4,7 @@
         <div class="col-span-3">
             <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
         </div>
-        <div class="col-span-8 lg:pl-12">
+        <div class="col-span-7 lg:pl-12">
             <h2 class="title-normal"><?php the_title(); ?></h2>
             <p class="text-body max-w-sm"><?php the_field( 'section_intro_intro_text' ); ?></p>
             <p class="text-bigger flex items-center my-16"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4"><?php the_field('section_intro_schedule') ?></p>
@@ -28,14 +28,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-span-1">
+        <div class="col-span-2 pt-4">
         <?php
         $previous_post = get_previous_post(); // Get the previous post object
 
         if ($previous_post) { // Check if there is a previous post
             $previous_post_link = get_permalink($previous_post); // Get the permalink of the previous post
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="text-bigger flex items-center"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="text-bigger flex items-center justify-end"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
             <?php
         }
         ?>
