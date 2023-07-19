@@ -8,8 +8,8 @@
 		<?php endif; ?>
 		</div>
 	</div>
-	<div class="footer-content container mx-auto py-8 grid grid-cols-1 gap-5 lg:grid-cols-10 w-11/12 lg:w-full">
-		<div class="col-span-1 lg:col-span-3">
+	<div class="footer-content container mx-auto py-8 grid gap-5 grid-cols-10 w-11/12 lg:w-full">
+		<div class="col-span-5 lg:col-span-3">
 			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Kontakt' , 'paun' ) ?></h3>
 			<p class="text-body mt-10">
 				<?php the_field( 'contact_address', 'option' ) ?>
@@ -20,7 +20,7 @@
 				<a class="text-body" href="mailto:<?php the_field( 'contact_email', 'option' ) ?>"><?php the_field( 'contact_email', 'option' ) ?></a>
 			</p>
 		</div>
-		<div class="col-span-1 lg:col-span-3">
+		<div class="col-span-5 lg:col-span-3">
 			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Pages' , 'paun' ) ?></h3>
 			<?php
 			wp_nav_menu(
@@ -45,8 +45,8 @@
 			);
 			?>
 		</div>
-		<div class="col-span-1 lg:col-span-4">
-			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Newsletter' , 'paun' ) ?></h3>
+		<div class="col-span-10 lg:col-span-4 pt-12 lg:pt-0">
+			<h3 class="text-text-color title-subtitle !mb-0 lg:mb-8"><?php esc_html_e( 'Newsletter' , 'paun' ) ?></h3>
 			<?php 
 			$form_shortcode = get_field('settings_newsletter_shortcode', 'option');
 			echo do_shortcode($form_shortcode);
