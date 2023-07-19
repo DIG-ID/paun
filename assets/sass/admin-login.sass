@@ -3,10 +3,10 @@
 
 //Color variables
 $main-green: #3D4F48
-$bg-color: #EFF3F6
+$bg-color: #FEFAE0
 
 body
-  background-color: $bg-color
+  background-color: $main-green
   background-position: bottom
   background-position-y: 140%
   background-repeat: no-repeat
@@ -68,14 +68,17 @@ body
         background: #fff
   #backtoblog, #nav
     text-align: center
-    color: #000
+    color: $bg-color
     a
-      color: #000
+      color: $bg-color
       font-weight: 600
 
   input:-webkit-autofill
     -webkit-box-shadow: 0 0 0 30px white inset
     -webkit-text-fill-color: #000 !important
+
+.privacy-policy-link
+  color: $bg-color
 
 .wpml-login-ls
   form#wpml-login-ls-form

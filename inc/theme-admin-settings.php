@@ -58,10 +58,7 @@ add_filter( 'admin_footer_text', 'theme_custom_admin_footer' );
 function theme_login_logo() {
 	echo '<style type="text/css">
 	h1 a {
-		background-image: url(' . get_template_directory_uri() . '/assets/images/paun-main.min.svg) !important;
-	}
-	body {
-		background-image: url(' . get_template_directory_uri() . '/assets/images/paun-mountains.min.svg) !important;
+		background-image: url(' . get_template_directory_uri() . '/assets/images/logo_footer.png) !important;
 	}
 	</style>';
 }
