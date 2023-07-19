@@ -34,7 +34,7 @@
             <div class="col col-span-3 sm:col-span-1 lg:col-span-2 sm:border-b-2 border-text-color pb-0 sm:pb-32 pl-9 sm:pl-7">
                 <h2 class="title-normal"><?php the_title(); ?></h2>
                 <p class="text-body lg:max-w-sm mb-10"><?php the_field('section_intro_intro_text') ?></p>
-                <p class="text-bigger flex items-center my-8 lg:my-16"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4"><?php the_field('section_intro_schedule') ?></p>
+                <p class="text-bigger flex items-start my-8 lg:my-16"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4"><?php the_field('section_intro_schedule') ?></p>
                 <a href="<?php the_permalink(); ?>" class="btn-moreinfo text-button flex items-center !leading-6"><span><?php esc_html_e( 'Mehr erfahren', 'paun' ) ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
             </div>
         </div>
