@@ -15,11 +15,18 @@
 			?>
 			</div>
 			<div class="header-logo-wrapper w-11/12 mx-auto sm:w-7/12 xl:w-2/3 flex p-0 sm:py-8 sm:px-0">
-			<?php 
-			$main_logo = get_field('settings_website_logo', 'option');
-			if( !empty( $main_logo ) ): ?>
-				<a href="<?php echo get_home_url(); ?>"><img src="<?php echo esc_url($main_logo['url']); ?>" alt="<?php echo esc_attr($main_logo['alt']); ?>" class="header-logo" /></a>
-			<?php endif; ?>
+				<?php 
+				if ( is_page('kontakt') ) {
+					// Display the h1 tag for the "kontakt" page
+					echo '<h1 class="title-section">Kontakt</h1>';
+				} else {
+					// Display the logo for other pages
+					$main_logo = get_field('settings_website_logo', 'option');
+					if( !empty( $main_logo ) ): ?>
+						<a href="<?php echo get_home_url(); ?>"><img src="<?php echo esc_url($main_logo['url']); ?>" alt="<?php echo esc_attr($main_logo['alt']); ?>" class="header-logo" /></a>
+					<?php endif;
+				}
+				?>
 			</div>
 		</div>
 	</nav>

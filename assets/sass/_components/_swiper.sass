@@ -15,8 +15,23 @@
         justify-content: center
         align-items: center
 
-.swiper-pagination-angebote
-    @apply px-24 text-right
-
 .swiper-pagination-bullet
     background-color: $main-green
+
+.swiper-slide-active
+  overflow: hidden
+
+.swiper-pagination-angebote
+  @apply px-24 text-right relative
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: 20px
+    width: 55px
+    height: 16px
+    background-image: url('/wp-content/themes/paun/assets/images/Arrow_s.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    transform: translateY(-50%)
