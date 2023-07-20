@@ -56,7 +56,7 @@
         ?>
         </div>
     </div>
-        <div id="form-popup" class="modal-content relative w-full max-w-2xl max-h-full bg-main-green p-10 transition-opacity duration-300 ease-in-out">
+        <div id="form-popup" class="modal-content relative w-full max-w-2xl max-h-full bg-main-green p-10 transition-opacity duration-300 ease-in-out hidden">
             <!-- Modal content -->
             <h2 class="title-normal"><?php the_title(); ?></h2>
             <p class="text-body max-w-xs sm:max-w-md"><?php the_field( 'section_intro_intro_text' ); ?></p>
