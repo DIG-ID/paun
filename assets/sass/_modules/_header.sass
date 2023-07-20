@@ -17,8 +17,9 @@
                     @apply w-28
 
 .main-menu-top-level
+    @apply lg:max-h-9
     .menu-item
-        @apply text-white sm:ml-6 font-titles font-light text-[10px] sm:text-xs lg:text-xl uppercase tracking-[0.2em]
+        @apply text-white sm:ml-6 font-titles font-light text-[10px] sm:text-xs lg:text-xl uppercase tracking-[0.1em] lg:flex lg:items-center lg:pt-[6px] lg:leading-4
         a
             padding-left: 3px
             @apply border-b border-main-green
@@ -33,15 +34,13 @@
 
 .menu-footer
     .menu-item
-        @apply text-text-color text-xs sm:text-sm xl:text-lg font-sans font-extralight tracking-wider leading-9
+        @apply text-text-color text-xs sm:text-sm xl:text-lg font-sans font-extralight tracking-wide leading-9
 
 #header-main
     position: sticky
     top: 0
     z-index: 100
     transition: top 0.3s ease
-    &.sticky
-        border-bottom: 1px solid #29332E
 
 .transition-logo-width
     transition: width 0.3s ease

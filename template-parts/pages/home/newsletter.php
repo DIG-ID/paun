@@ -1,5 +1,5 @@
-<section class="section-newsletter pt-16 sm:pt-36 pb-20 sm:pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto border-t-2 border-text-color">
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12">
+<section class="section-newsletter pb-20 sm:pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-16 sm:pt-36 border-t-2 border-text-color">
         <div class="col col-span-1 lg:col-span-6 lg:col-start-4 pb-0 sm:pb-12">
 			<h3 class="title-normal text-center"><?php the_field( 'section_newsletter_section_title' ); ?></h3>
 		</div>

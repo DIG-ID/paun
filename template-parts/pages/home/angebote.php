@@ -1,5 +1,5 @@
-<section class="section-unser-antrieb pt-8 pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto border-t-2 border-text-color">
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12">
+<section class="section-unser-antrieb pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-8 border-t-2 border-text-color">
 		<div class="col col-span-1 lg:col-span-12">
 		    <h2 class="title-section"><?php the_field( 'section_angebote_section_title' ); ?></h2>
         </div>
@@ -27,7 +27,7 @@
             while ($query->have_posts()) :
                 $query->the_post();
         ?>
-        <div class="container grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 py-24 lg:py-28 swiper-slide border-b-2 border-text-color sm:border-0">
+        <div class="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 py-24 lg:py-28 swiper-slide border-b-2 border-text-color sm:border-0">
             <div class="col col-span-1 sm:col-span-1 lg:col-span-1 flex justify-end items-start pt-5">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-top.svg">
             </div>
