@@ -12,7 +12,7 @@
 		    <p class="text-body"><?php the_field( 'section_angebote_description_right_column' ); ?></p>
         </div>
     </div>
-    <div class="swiper swiper-angebote-home">
+    <div class="swiper swiper-angebote-home container">
     <div class="swiper-wrapper">
         <?php
             $args = array(
@@ -27,11 +27,11 @@
             while ($query->have_posts()) :
                 $query->the_post();
         ?>
-        <div class="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 py-24 lg:py-28 swiper-slide border-b-2 border-text-color sm:border-0">
-            <div class="col col-span-1 sm:col-span-1 lg:col-span-1 flex justify-end items-start pt-5">
+        <div class="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 pt-24 lg:pt-28 pb-6 lg:pb-0 swiper-slide">
+            <div class="col col-span-1 sm:col-span-1 lg:col-span-1 flex justify-end items-start pt-5 pr-9 sm:pr-7">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-top.svg">
             </div>
-            <div class="col col-span-3 sm:col-span-1 lg:col-span-2 sm:border-b-2 border-text-color pb-0 sm:pb-32 pl-9 sm:pl-7">
+            <div class="col col-span-3 sm:col-span-1 lg:col-span-2 pb-10 lg:pb-0 border-b-2 border-text-color lg:border-0">
                 <h2 class="title-normal"><?php the_title(); ?></h2>
                 <p class="text-body lg:max-w-sm mb-10"><?php the_field('section_intro_intro_text') ?></p>
                 <p class="text-bigger flex items-start my-8 lg:my-16"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4"><?php the_field('section_intro_schedule') ?></p>
@@ -43,6 +43,11 @@
         wp_reset_postdata();
         ?>
         </div>
-        <div class="swiper-pagination-angebote mt-8 sm:mt-0"></div><img class="float-right hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4">
+        <div class="container mx-auto lg:grid grid-cols-3 pt-24 lg:pt-28 pb-5 hidden">
+            <div class="col-span-2 col-start-2 h-1">
+                <p class="border-b-2 border-text-color"></p>
+            </div>
+        </div>
+        <div class="container mx-auto swiper-pagination-angebote mt-8 sm:mt-0"></div><img class="float-right hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4">
     </div>
 </section>

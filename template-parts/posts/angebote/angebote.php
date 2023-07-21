@@ -34,7 +34,7 @@
         if ($previous_post) {
             $previous_post_link = get_permalink($previous_post);
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-bigger items-center justify-end"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center justify-end"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
             <?php
         }
         ?>
@@ -50,16 +50,16 @@
         if ($previous_post) {
             $previous_post_link = get_permalink($previous_post);
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-bigger items-center justify-end"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center justify-end"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
             <?php
         }
         ?>
         </div>
     </div>
-        <div id="form-popup" class="modal-content relative w-full max-w-2xl max-h-full bg-main-green p-10 transition-opacity duration-300 ease-in-out hidden">
+        <div id="form-popup" class="modal-content relative w-full max-w-2xl max-h-full bg-main-green p-24 transition-opacity duration-300 ease-in-out hidden">
             <!-- Modal content -->
             <h2 class="title-normal"><?php the_title(); ?></h2>
-            <p class="text-body max-w-xs sm:max-w-md"><?php the_field( 'section_intro_intro_text' ); ?></p>
+            <p class="text-body max-w-xs sm:max-w-md !mb-16"><?php the_field( 'section_intro_intro_text' ); ?></p>
             <?php 
 			$form_shortcode = get_field('settings_angebote_form_shortcode', 'option');
 			echo do_shortcode($form_shortcode);

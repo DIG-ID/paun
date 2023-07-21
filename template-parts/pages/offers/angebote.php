@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="col-span-1">
-            <a href="#" class="text-bigger flex items-center"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
+            <a href="#" class="text-body flex items-center"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
         </div>
     </div>
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
