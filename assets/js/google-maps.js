@@ -210,7 +210,7 @@ function initMap( $el ) {
     fullscreenControl: false,
     streetViewControl: false,
     mapTypeControl: false,
-    zoomControl: false,
+    zoomControl: true,
     scrollwheel: false,
     styles: mapStyle
   };
