@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 scrollTrigger: {
                     trigger: '.home',
                     start: 'top top',
-                    end: 'top+=1200',
+                    end: 'top+=600',
                     scrub: true,
                 },
             });
