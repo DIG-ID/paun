@@ -16,13 +16,9 @@
 		<div class="col col-span-1 lg:col-span-1 lg:col-start-5 justify-center flex">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
 		</div>
-		<div class="col col-span-1 lg:col-span-7 lg:col-start-2 justify-center flex">
-		<?php 
-			$intro_image = get_field('section_intro_head_image');
-			if( $intro_image ) {
-				echo wp_get_attachment_image( $intro_image, 'full' );
-			} 
-		?>
+		<div class="col col-span-1 lg:col-span-7 lg:col-start-2 justify-center flex relative">
+			<img class="home-intro-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle_letters.png">
+			<img class="overlay-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bread.png">
 		</div>
 		<div class="col col-span-1 lg:col-span-1 lg:col-start-5 justify-center flex">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
