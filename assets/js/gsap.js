@@ -41,6 +41,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 repeat: -1,
                 repeatDelay: 2,
             });
+
+            // Center the .overlay-img within its parent container
+            centerOverlayImage();
+
+            // Function to center the .overlay-img within its parent container
+            function centerOverlayImage() {
+                const overlayImg = document.querySelector('.overlay-img');
+                if (overlayImg) {
+                    const parentWidth = overlayImg.parentElement.offsetWidth;
+                    const parentHeight = overlayImg.parentElement.offsetHeight;
+                    overlayImg.style.transform = `translate(-50%, -50%)`;
+                }
+            }
+
+            // Recenter the .overlay-img when the window is resized
+            window.addEventListener('resize', centerOverlayImage);
+            
             /*gsap.to('.home-intro-img', {
                 rotation: -45,
                 duration: 0.2,
