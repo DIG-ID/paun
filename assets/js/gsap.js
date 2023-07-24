@@ -33,12 +33,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 repeat: -1,
             });
 
-            gsap.to('.overlay-img', {
-                rotation: 360,
-                duration: 50,
-                ease: 'linear',
-                repeat: -1,
-            });
+            // Delay the overlay-img animation to allow SASS styles to apply
+            setTimeout(function() {
+                // Animate the "overlay-img" to rotate right automatically
+                gsap.to('.overlay-img', {
+                    rotation: 360,
+                    duration: 50,
+                    ease: 'linear',
+                    repeat: -1,
+                });
+            }, 100); // Adjust the delay time if needed
 
 
             /*gsap.to('.home-intro-img', {
