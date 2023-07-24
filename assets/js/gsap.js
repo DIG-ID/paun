@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to('.home .header-logo', {
                 width: '7rem',
                 duration: 1, // Adjust the duration here (e.g., 0.4 seconds)
-                ease: 'power2.out',
+                ease: 'linear',
                 scrollTrigger: {
                     trigger: '.home',
                     start: 'top top',
@@ -28,16 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
             gsap.to('.home-intro-img', {
                 rotation: -360, // Adjust the rotation angle here (e.g., -360 degrees for one full rotation)
-                duration: 150, // Adjust the duration here (e.g., 5 seconds for one full rotation)
-                ease: 'power2.out',
+                duration: 50, // Adjust the duration here (e.g., 5 seconds for one full rotation)
+                ease: 'linear',
                 repeat: -1, // Repeat indefinitely
                 repeatDelay: 2, // Delay between each repeat (e.g., 2 seconds)
             });
 
             gsap.to('.overlay-img', {
                 rotation: 360, // Adjust the rotation angle here (e.g., 360 degrees for one full rotation)
-                duration: 150, // Adjust the duration here (e.g., 5 seconds for one full rotation)
-                ease: 'power2.out',
+                duration: 50, // Adjust the duration here (e.g., 5 seconds for one full rotation)
+                ease: 'linear',
                 repeat: -1, // Repeat indefinitely
                 repeatDelay: 2, // Delay between each repeat (e.g., 2 seconds)
             });
