@@ -16,19 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
         function setupScrollTrigger() {
             gsap.to('.home .header-logo', {
                 width: '7rem',
-                duration: 1,
                 ease: 'linear',
                 scrollTrigger: {
                     trigger: '.home',
                     start: 'top top',
-                    end: 'top+=1400',
+                    end: 'top+=600',
                     scrub: true,
                 },
             });
 
             gsap.to('.home-intro-img', {
                 rotation: -360,
-                duration: 80,
+                duration: 150,
                 ease: 'linear',
                 repeat: -1,
             });
@@ -38,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Animate the "overlay-img" to rotate right automatically
                 gsap.to('.overlay-img', {
                     rotation: 360,
-                    duration: 80,
+                    duration: 150,
                     ease: 'linear',
                     repeat: -1,
                 });
