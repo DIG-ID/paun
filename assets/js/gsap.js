@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 scrollTrigger: {
                     trigger: '.home',
                     start: 'top top',
-                    end: 'top+=1000',
+                    end: 'top+=1400',
                     scrub: true,
                 },
             });
 
             gsap.to('.home-intro-img', {
                 rotation: -360,
-                duration: 50,
+                duration: 80,
                 ease: 'linear',
                 repeat: -1,
             });
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Animate the "overlay-img" to rotate right automatically
                 gsap.to('.overlay-img', {
                     rotation: 360,
-                    duration: 50,
+                    duration: 80,
                     ease: 'linear',
                     repeat: -1,
                 });
