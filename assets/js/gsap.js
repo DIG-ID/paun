@@ -16,30 +16,30 @@ document.addEventListener('DOMContentLoaded', function() {
         function setupScrollTrigger() {
             gsap.to('.home .header-logo', {
                 width: '7rem',
-                duration: 1, // Adjust the duration here (e.g., 0.4 seconds)
+                duration: 1,
                 ease: 'linear',
                 scrollTrigger: {
                     trigger: '.home',
                     start: 'top top',
-                    end: 'top+=600',
+                    end: 'top+=1000',
                     scrub: true,
                 },
             });
 
             gsap.to('.home-intro-img', {
-                rotation: -360, // Adjust the rotation angle here (e.g., -360 degrees for one full rotation)
-                duration: 50, // Adjust the duration here (e.g., 5 seconds for one full rotation)
+                rotation: -360,
+                duration: 50,
                 ease: 'linear',
-                repeat: -1, // Repeat indefinitely
-                repeatDelay: 2, // Delay between each repeat (e.g., 2 seconds)
+                repeat: -1,
+                repeatDelay: 2,
             });
 
             gsap.to('.overlay-img', {
-                rotation: 360, // Adjust the rotation angle here (e.g., 360 degrees for one full rotation)
-                duration: 50, // Adjust the duration here (e.g., 5 seconds for one full rotation)
+                rotation: 360,
+                duration: 50,
                 ease: 'linear',
-                repeat: -1, // Repeat indefinitely
-                repeatDelay: 2, // Delay between each repeat (e.g., 2 seconds)
+                repeat: -1,
+                repeatDelay: 2,
             });
             /*gsap.to('.home-intro-img', {
                 rotation: -45,
