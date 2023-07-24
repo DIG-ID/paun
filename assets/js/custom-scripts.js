@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  if ($(window).width() > 640) {
+  /*if ($(window).width() > 640) {
     function debounce(func, delay) {
       let timer;
       return function() {
@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
       var header = $('#header-main');
       var logo = $('.header-logo');
       var scrollTop = $(window).scrollTop();
-      var threshold = 0; // Adjust the value (in pixels) as needed
+      var threshold = 0; 
       var isSticky = header.hasClass('sticky');
     
       if (scrollTop > threshold && !isSticky) {
@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
         logo.removeClass('sticky-logo');
         logo.addClass('transition-logo-width');
       }
-    }, 50)); // Adjust the debounce delay (in milliseconds) as needed
+    }, 50)); 
   }
 
   if ($(window).width() < 640) {
@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
       var maincontent = $('#main-content');
       var logo = $('.header-logo');
       var scrollTop = $(window).scrollTop();
-      var threshold = 0; // Adjust the value (in pixels) as needed
+      var threshold = 0; 
       var isSticky = header.hasClass('sticky');
     
       if (scrollTop > threshold && !isSticky) {
@@ -47,5 +47,5 @@ jQuery(document).ready(function($) {
       }
     });
 
-  }
+  }*/
 });

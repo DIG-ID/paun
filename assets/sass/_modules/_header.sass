@@ -1,20 +1,17 @@
 //logo global
 .header
     &-logo
-        transition: width 0.3s ease
-        @apply w-28
+        width: 7rem
 
 //logo in homepage
 .home
     .header-main
         .header
             &-logo
-                @apply max-w-full w-full
-        &.sticky
-            .header
-                &-logo
-                    transition: width 0.3s ease
-                    @apply w-28
+                width: 100%
+                max-width: 100%
+                &.small
+                    width: 7rem
 
 .main-menu-top-level
     @apply lg:max-h-9
@@ -40,10 +37,10 @@
     position: sticky
     top: 0
     z-index: 100
-    transition: top 0.3s ease
+    //transition: top 0.3s ease
 
 .transition-logo-width
-    transition: width 0.3s ease
+    //transition: width 0.3s ease
 
 .sticky
     top: -100px
