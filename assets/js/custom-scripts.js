@@ -1,39 +1,25 @@
 jQuery(document).ready(function($) {
-  /*if ($(window).width() > 640) {
-    function debounce(func, delay) {
-      let timer;
-      return function() {
-        clearTimeout(timer);
-        timer = setTimeout(func, delay);
-      };
-    }
-    
-    $(window).scroll(debounce(function() {
-      var header = $('#header-main');
-      var logo = $('.header-logo');
-      var scrollTop = $(window).scrollTop();
-      var threshold = 0; 
-      var isSticky = header.hasClass('sticky');
-    
-      if (scrollTop > threshold && !isSticky) {
-        header.addClass('sticky');
-        logo.addClass('sticky-logo');
-        logo.removeClass('transition-logo-width');
-      } else if (scrollTop <= threshold && isSticky) {
-        header.removeClass('sticky');
-        logo.removeClass('sticky-logo');
-        logo.addClass('transition-logo-width');
+    // Wait for the document to be fully loaded
+    $(document).ready(function() {
+      // Check for wheel event support (modern browsers)
+      if ('onwheel' in document) {
+        // Set the scroll behavior to smooth
+        document.querySelector('html').style.scrollBehavior = 'smooth';
+      } else {
+        // For older browsers, use polyfill (optional)
+        var script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
       }
-    }, 50)); 
-  }
-
+    });
+  
   if ($(window).width() < 640) {
     $(window).scroll(function() {
       var header = $('#header-main');
       var maincontent = $('#main-content');
       var logo = $('.header-logo');
       var scrollTop = $(window).scrollTop();
-      var threshold = 0; 
+      var threshold = 70; 
       var isSticky = header.hasClass('sticky');
     
       if (scrollTop > threshold && !isSticky) {
@@ -46,6 +32,6 @@ jQuery(document).ready(function($) {
         logo.addClass('transition-logo-width');
       }
     });
+  }
 
-  }*/
 });

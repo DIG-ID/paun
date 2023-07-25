@@ -12,7 +12,7 @@
 			<h2 class="text-body sm:columns-2"><?php the_field( 'section_intro_head_text' ); ?></h2>
 		</div>
 	</div>
-	<div class="container mx-auto py-16 px-8 grid grid-cols-1 lg:grid-cols-9">
+	<div class="container mx-auto pt-0 pb-10 sm:pt-16 sm:pb-16 px-8 grid grid-cols-1 lg:grid-cols-9">
 		<div class="col col-span-1 lg:col-span-1 lg:col-start-5 justify-center flex">
 			<img class="dot_sep" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
 		</div>

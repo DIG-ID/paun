@@ -162,7 +162,6 @@ function modify_latest_post_menu_item( $items, $args ) {
 add_filter( 'wp_nav_menu_items', 'modify_latest_post_menu_item', 10, 2 );
 
 
-
 //Google Map Init
 function paun_theme_google_map_init() {
 	if ( is_admin() ) :
