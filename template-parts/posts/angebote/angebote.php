@@ -1,4 +1,4 @@
-<section class="section-angebote-list pb-24 lg:pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
+<section class="section-angebote-list pb-24 lg:pb-44 bg-bg-color overflow-hidden w-full sm:w-11/12 mx-auto px-8 sm:px-0">
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12">
         <div class="col-span-3 hidden lg:block">
             <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
@@ -6,8 +6,8 @@
         <div class="col-span-7 lg:pl-12">
             <h2 class="title-normal"><?php the_title(); ?></h2>
             <p class="text-body max-w-xs sm:max-w-sm"><?php the_field( 'section_intro_intro_text' ); ?></p>
-            <p class="block lg:hidden max-w-xs sm:max-w-md"><?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?></p>
-            <p class="text-bigger flex items-start my-16"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4"><?php the_field('section_intro_schedule') ?></p>
+            <p class="block lg:hidden max-w-full sm:max-w-md"><?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?></p>
+            <p class="text-bigger flex items-start my-16 !leading-6 sm:!leading-10"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4 w-5"><?php the_field('section_intro_schedule') ?></p>
             <div class="grid grid-cols-1 sm:grid-cols-12 lg:grid-cols-12 gap-5 lg:gap-0">
                 <div class="col-span-1 sm:col-span-7 lg:col-span-8">
                     <p class="text-body !font-bold"><?php esc_html_e( 'Beschreibung:', 'paun' ); ?></p>
@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
-        <div class="col-span-1 lg:col-span-9 lg:col-start-4 lg:pl-12">
+        <div class="col-span-1 lg:col-span-9 lg:col-start-4 lg:pl-12 text-right sm:text-left">
             <a data-fancybox data-src="#form-popup" href="javascript:;" class="btn-order" type="button"><?php esc_html_e( 'Anfrage senden', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></a>
         </div>
         <div class="col-span-2 pt-11 block lg:hidden">
@@ -56,7 +56,7 @@
         ?>
         </div>
     </div>
-        <div id="form-popup" class="modal-content relative w-full max-w-2xl max-h-full bg-main-green p-24 transition-opacity duration-300 ease-in-out hidden">
+        <div id="form-popup" class="modal-content relative w-full max-w-2xl max-h-full bg-main-green sm:p-24 transition-opacity duration-300 ease-in-out hidden">
             <!-- Modal content -->
             <h2 class="title-normal"><?php the_title(); ?></h2>
             <p class="text-body max-w-xs sm:max-w-md !mb-16"><?php the_field( 'section_intro_intro_text' ); ?></p>

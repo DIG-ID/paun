@@ -1,4 +1,4 @@
-<section class="section-contact pb-24 lg:pb-44 bg-bg-color overflow-hidden w-11/12 mx-auto">
+<section class="section-contact pb-24 lg:pb-44 bg-bg-color overflow-hidden w-full sm:w-11/12 mx-auto px-8 sm:px-0">
 	<div class="container mx-auto grid grid-cols-1 lg:grid-cols-2">
 		<div class="col-span-1">
 			<p class="text-bigger mb-8 lg:mb-16"><?php the_field( 'section_details_title' ); ?></p>

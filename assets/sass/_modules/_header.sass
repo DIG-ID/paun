@@ -16,7 +16,7 @@
 .main-menu-top-level
     @apply lg:max-h-9
     .menu-item
-        @apply text-white sm:ml-6 font-titles font-light text-[10px] sm:text-xs lg:text-xl uppercase tracking-[0.1em] lg:flex lg:items-center lg:pt-[6px] lg:leading-4
+        @apply text-white sm:ml-6 font-titles font-light text-xs sm:text-sm lg:text-xl uppercase tracking-[0.1em] lg:flex lg:items-center lg:pt-[6px] lg:leading-4
         a
             padding-left: 3px
             @apply border-b border-main-green
@@ -55,6 +55,12 @@
     .sticky
         .header-logo-wrapper
             @apply hidden
+
+    .home
+        .header-main
+            .header
+                &-logo
+                    width: 85%
 
 @media (max-width: 440px)
     .content-padding-top

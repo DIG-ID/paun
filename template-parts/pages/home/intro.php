@@ -1,6 +1,6 @@
 <section class="section-intro py-8 lg:pb-32 lg:pt-16 bg-bg-color overflow-hidden">
 	<div class="container mx-auto px-8 grid grid-cols-2 sm:grid-cols-7 lg:grid-cols-12">
-		<div class="col col-span-1 sm:col-span-3 lg:col-span-3 lg:col-start-7">
+		<div class="col col-span-2 sm:col-span-3 lg:col-span-3 lg:col-start-7">
 			<h2 class="title-normal"><?php the_field( 'section_intro_head_title' ); ?></h2>
 		</div>
 	</div>
@@ -14,14 +14,14 @@
 	</div>
 	<div class="container mx-auto py-16 px-8 grid grid-cols-1 lg:grid-cols-9">
 		<div class="col col-span-1 lg:col-span-1 lg:col-start-5 justify-center flex">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
+			<img class="dot_sep" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
 		</div>
 		<div class="col col-span-1 lg:col-span-7 lg:col-start-2 justify-center flex relative">
 			<img class="home-intro-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle_letters.png">
 			<img class="overlay-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Bread.png">
 		</div>
 		<div class="col col-span-1 lg:col-span-1 lg:col-start-5 justify-center flex">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
+			<img class="dot_sep" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
 		</div>
 	</div>
 
