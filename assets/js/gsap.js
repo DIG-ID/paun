@@ -3,11 +3,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from '@studio-freight/lenis'
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     //Gsap ScrollTrigger
     gsap.registerPlugin(ScrollTrigger);
 
     //Lenis smooth scroll configuration
+    const lenis = new Lenis()
+
+    function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
     /*const lenis = new Lenis({
         duration: 1.5,
         smooth: true
