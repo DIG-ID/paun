@@ -1,6 +1,18 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from '@studio-freight/lenis'
+const lenis = new Lenis()
 
+lenis.on('scroll', (e) => {
+  //console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
 document.addEventListener('DOMContentLoaded', function() {
     gsap.registerPlugin(ScrollTrigger);
     if ($(window).width() > 640 && document.querySelector('.home')) {
