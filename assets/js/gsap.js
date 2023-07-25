@@ -3,28 +3,31 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from '@studio-freight/lenis'
 
 
-const lenis = new Lenis({
-    duration: 1.2,
-    smooth: true
-  });
-  
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  
-  requestAnimationFrame(raf)
-  
-  //GSAP ScrollTrigger integration
-  lenis.on('scroll', ScrollTrigger.update)
-  
-  gsap.ticker.add((time)=>{
-    lenis.raf(time * 1000)
-  })
-
-requestAnimationFrame(raf)
 document.addEventListener('DOMContentLoaded', function() {
+    //Gsap ScrollTrigger
     gsap.registerPlugin(ScrollTrigger);
+
+    //Lenis smooth scroll configuration
+    const lenis = new Lenis({
+        duration: 1.2,
+        smooth: true
+      });
+      
+      function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+      
+      requestAnimationFrame(raf);
+      
+      //GSAP ScrollTrigger integration
+      lenis.on('scroll', ScrollTrigger.update);
+      
+      gsap.ticker.add((time)=>{
+        lenis.raf(time * 1000)
+      });
+
+    //Gsap configuration
     if ($(window).width() > 640 && document.querySelector('.home')) {
         // Get the logo element
         const logo = document.querySelector('.home .header-logo');
@@ -65,30 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }, 100); // Adjust the delay time if needed
 
-
-            /*gsap.to('.home-intro-img', {
-                rotation: -45,
-                duration: 0.2,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.home',
-                    start: 'top 80%',
-                    end: 'bottom 20%', 
-                    scrub: true,
-                },
-            });
-
-            gsap.to('.overlay-img', {
-                rotation: 45, 
-                duration: 0.2,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.home',
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    scrub: true,
-                },
-            });*/
         }
     }
 });
