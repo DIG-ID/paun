@@ -1,5 +1,5 @@
 <footer class="footer-main py-16 border-t-2 border-solid border-text-color bg-bg-color">
-	<div class="footer-content container mx-auto py-8 grid grid-cols-1 gap-5 lg:grid-cols-10 w-11/12 lg:w-full">
+	<div class="footer-content container mx-auto py-8 grid grid-cols-1 gap-5 lg:grid-cols-10 w-full px-8 xl:px-0">
 		<div class="col-span-1 lg:col-span-3">
 		<?php 
 		$footer_logo = get_field('settings_footer_logo', 'option');
@@ -8,7 +8,7 @@
 		<?php endif; ?>
 		</div>
 	</div>
-	<div class="footer-content container mx-auto py-8 grid gap-5 grid-cols-10 w-11/12 lg:w-full">
+	<div class="footer-content container mx-auto py-8 grid gap-5 grid-cols-10 w-full px-8 xl:px-0">
 		<div class="col-span-5 lg:col-span-3">
 			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Kontakt' , 'paun' ) ?></h3>
 			<p class="text-body mt-10">
