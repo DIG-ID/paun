@@ -25,7 +25,7 @@
 		</div>
         <div class="col-span-1 sm:col-span-2 lg:col-span-3 pt-5 sm:pt-20 lg:pt-0">
 			<p class="text-bigger mb-8 sm:mb-20 w-full sm:w-1/2 lg:w-full float-left lg:float-none"><?php the_field( 'section_popupstore_order_text' ); ?></p>
-            <a href="<?php the_field( 'settings_order_button_url', 'option' ); ?>" class="btn-order px-8 py-2 float-right sm:float-none" type="button"><?php esc_html_e( 'Jetzt bestellen', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></a>
+            <a href="<?php the_field( 'settings_order_button_url', 'option' ); ?>" class="btn-order px-8 py-2 float-right sm:float-none" type="button"><?php esc_html_e( 'Jetzt bestellen', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
 		</div>
 	</div>
 </section>

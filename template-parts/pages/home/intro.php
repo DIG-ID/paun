@@ -6,7 +6,7 @@
 	</div>
 	<div class="container mx-auto pb-16 px-8 grid grid-cols-1 lg:grid-cols-12">
 		<div class="col col-span-2 sm:col-span-1 lg:col-span-6 pt-2 order-2 lg:order-1 flex lg:block justify-end">
-			<a href="<?php the_field( 'settings_order_button_url', 'option' ); ?>" class="btn-order px-8 py-2" type="button"><?php esc_html_e( 'Jetzt bestellen', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></a>
+			<a href="<?php the_field( 'settings_order_button_url', 'option' ); ?>" class="btn-order px-8 py-2" type="button"><?php esc_html_e( 'Jetzt bestellen', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
 		</div>
 		<div class="col-span-1 lg:col-span-6 order-1 lg:order-2">
 			<h2 class="text-body sm:columns-2"><?php the_field( 'section_intro_head_text' ); ?></h2>

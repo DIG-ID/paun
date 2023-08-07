@@ -36,7 +36,7 @@
         if ($previous_post) {
             $previous_post_link = get_permalink($previous_post);
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex uppercase text-body !font-semibold items-center justify-end"><span><?php esc_html_e( 'Nächstes Angebot', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex uppercase text-body !font-semibold items-center justify-end"><span><?php esc_html_e( 'Nächstes Angebot', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
             <?php
         }
         ?>
@@ -44,7 +44,7 @@
     </div>
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
         <div class="col-span-1 lg:col-span-9 lg:col-start-4 lg:pl-12 text-right sm:text-left">
-            <a data-fancybox data-src="#form-popup" href="javascript:;" class="btn-order" type="button"><?php esc_html_e( 'Anfrage senden', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4"></a>
+            <a data-fancybox data-src="#form-popup" href="javascript:;" class="btn-order" type="button"><?php esc_html_e( 'Anfrage senden', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
         </div>
         <div class="col-span-2 pt-11 block lg:hidden">
         <?php
@@ -52,7 +52,7 @@
         if ($previous_post) {
             $previous_post_link = get_permalink($previous_post);
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center justify-end"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body uppercase !font-semibold items-center justify-end"><span><?php esc_html_e( 'Nächstes Angebot', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
             <?php
         }
         ?>
