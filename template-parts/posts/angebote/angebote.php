@@ -3,7 +3,7 @@
         <div class="col-span-3 hidden lg:block">
             <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
         </div>
-        <div class="col-span-7 lg:pl-12">
+        <div class="col-span-6 lg:pl-12">
             <h2 class="title-normal"><?php the_title(); ?></h2>
             <p class="text-body max-w-xs sm:max-w-sm"><?php the_field( 'section_intro_intro_text' ); ?></p>
             <p class="block lg:hidden max-w-full sm:max-w-md"><?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?></p>
@@ -14,6 +14,7 @@
                     <p class="text-body max-w-xs lg:max-w-sm xl:max-w-md"><?php the_field( 'section_beschreibung_description_text' ); ?></p>
                     <p class="text-body !font-bold pr-6 max-w-[260px] sm:max-w-none"><?php the_field( 'section_beschreibung_footer_text' ); ?></p>
                 </div>
+                <?php if( get_field('offer_items_list') ) : ?>
                 <div class="col-span-1 sm:col-span-5 lg:col-span-4">
                     <p class="text-body !font-bold"><?php esc_html_e( 'Unser Diner Angebot beinhaltet:', 'paun' ); ?></p>
                     <ul class="list-disc pl-5">
@@ -26,15 +27,16 @@
                     ?>
                     </ul>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
-        <div class="col-span-2 pt-4 hidden lg:block">
+        <div class="col-span-3 pt-4 hidden lg:block">
         <?php
         $previous_post = get_previous_post(); 
         if ($previous_post) {
             $previous_post_link = get_permalink($previous_post);
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center justify-end"><span><?php esc_html_e( 'NÄCHTE', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex uppercase text-body !font-semibold items-center justify-end"><span><?php esc_html_e( 'Nächstes Angebot', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
             <?php
         }
         ?>
