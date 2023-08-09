@@ -1,5 +1,6 @@
 .text-body
-  @apply text-text-color text-xs sm:text-sm xl:text-lg font-sans font-extralight tracking-wider leading-7 sm:leading-9 mb-8
+  @apply text-text-color text-xs sm:text-sm xl:text-lg font-sans font-extralight tracking-wider mb-8
+  line-height: 2.25rem !important
 
 .text-bigger
   @apply text-text-color text-lg sm:text-xl xl:text-3xl font-titles leading-10 tracking-wide sm:tracking-normal
@@ -19,4 +20,6 @@
 .text-button
   @apply text-text-color text-xl sm:text-3xl xl:text-4xl font-titles leading-9
 
-@media (max-width)
+@media (max-width: 1024px)
+  .text-body
+    line-height: 1.75rem !important

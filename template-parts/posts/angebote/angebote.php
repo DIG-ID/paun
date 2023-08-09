@@ -7,7 +7,7 @@
             <h2 class="title-normal"><?php the_title(); ?></h2>
             <p class="text-body max-w-xs sm:max-w-sm"><?php the_field( 'section_intro_intro_text' ); ?></p>
             <p class="block lg:hidden max-w-full sm:max-w-md"><?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?></p>
-            <p class="text-bigger flex items-start my-16 !leading-6 sm:!leading-10"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4 w-5"><?php the_field('section_intro_schedule') ?></p>
+            <p class="text-bigger flex items-start my-16 !leading-6 sm:!leading-10"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4 w-5 lg:w-[30px]"><?php the_field('section_intro_schedule') ?></p>
             <div class="grid grid-cols-1 sm:grid-cols-12 lg:grid-cols-12 gap-5 lg:gap-0">
                 <div class="col-span-1 sm:col-span-7 lg:col-span-8">
                     <p class="text-body !font-bold"><?php esc_html_e( 'Beschreibung:', 'paun' ); ?></p>
