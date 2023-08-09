@@ -3,7 +3,7 @@
         <div class="col-span-3 hidden lg:block">
             <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
         </div>
-        <div class="col-span-6 lg:pl-12">
+        <div class="col-span-7 lg:pl-12">
             <h2 class="title-normal"><?php the_title(); ?></h2>
             <p class="text-body max-w-xs sm:max-w-sm"><?php the_field( 'section_intro_intro_text' ); ?></p>
             <p class="block lg:hidden max-w-full sm:max-w-md"><?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?></p>
@@ -30,16 +30,8 @@
                 <?php endif; ?>
             </div>
         </div>
-        <div class="col-span-3 pt-4 hidden lg:block">
-        <?php
-        $previous_post = get_previous_post(); 
-        if ($previous_post) {
-            $previous_post_link = get_permalink($previous_post);
-            ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex uppercase text-body !font-semibold items-center justify-end"><span><?php esc_html_e( 'Nächstes Angebot', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
-            <?php
-        }
-        ?>
+        <div class="col-span-2 pt-4 hidden lg:block">
+        
         </div>
     </div>
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
@@ -52,10 +44,29 @@
         if ($previous_post) {
             $previous_post_link = get_permalink($previous_post);
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body uppercase !font-semibold items-center justify-end"><span><?php esc_html_e( 'Nächstes Angebot', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body uppercase !font-semibold items-center justify-end"><span><?php esc_html_e( 'Nächstes', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
             <?php
         }
         ?>
+        </div>
+    </div>
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
+        <div class="col-span-1 lg:col-span-12 pt-4 hidden lg:flex justify-end">
+            <?php
+            $previous_post = get_previous_post(); 
+            $next_post = get_next_post();
+
+            $previous_post_link = $previous_post ? get_permalink($previous_post) : '#';
+            $next_post_link = $next_post ? get_permalink($next_post) : '#';
+
+            // Function to determine if a link is available
+            function is_link_available($post) {
+                return $post ? 'available' : 'unavailable';
+            }
+
+            ?>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center mr-8 <?php echo is_link_available($previous_post); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mr-4 hidden lg:block -scale-x-100"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"><?php esc_html_e( 'Vorheriges', 'paun' ); ?></a>
+            <a href="<?php echo esc_url($next_post_link); ?>" class="flex text-body !font-semibold items-center <?php echo is_link_available($next_post); ?>"><span><?php esc_html_e( 'Nächstes', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
         </div>
     </div>
         <div id="form-popup" class="modal-content relative w-full max-w-2xl max-h-full bg-main-green sm:p-24 transition-opacity duration-300 ease-in-out hidden">

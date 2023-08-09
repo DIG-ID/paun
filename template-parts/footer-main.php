@@ -21,7 +21,7 @@
 			</p>
 		</div>
 		<div class="col-span-5 lg:col-span-3">
-			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Pages' , 'paun' ) ?></h3>
+			<h3 class="text-text-color title-subtitle"><?php esc_html_e( 'Seiten' , 'paun' ) ?></h3>
 			<?php
 			wp_nav_menu(
 				array(
