@@ -16,9 +16,9 @@
 		<div class="col col-span-1 lg:col-span-1 lg:col-start-5 justify-center flex">
 			<img class="dot_sep" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
 		</div>
-		<div class="col col-span-1 lg:col-span-7 lg:col-start-2 justify-center flex relative">
-			<img class="home-intro-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle_letters.png">
-			<img class="overlay-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Bread.png">
+		<div class="col col-span-1 lg:col-span-7 lg:col-start-2 justify-center flex relative my-28">
+			<img class="home-intro-img w-full" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle_letters.png">
+			<img class="overlay-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Bread_home.png">
 		</div>
 		<div class="col col-span-1 lg:col-span-1 lg:col-start-5 justify-center flex">
 			<img class="dot_sep" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dot_sep.svg">
