@@ -1,4 +1,9 @@
 .post-content
+  p:not(.has-large-font-size)
+    @apply text-text-color text-xs sm:text-sm xl:text-lg font-sans font-extralight tracking-wider mb-8
+    line-height: 2.25rem !important
+  p.has-large-font-size
+    @apply text-text-color font-sans font-extralight tracking-wider mb-8
   .wp-block-image
     .size-full
       @apply w-full
