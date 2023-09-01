@@ -13,7 +13,7 @@
 					),
 				);
 				?>
-				<div id="temp-popup" class="hidden absolute top-20 right-[220px] text-text-color bg-main-green border border-text-color px-2 rounded shadow-md w-32 text-center">
+				<div id="temp-popup" class="hidden absolute top-[4.5rem] right-[220px] text-text-color bg-main-green border border-text-color px-2 rounded shadow-md w-32 text-center">
 					<p><?php esc_html_e( 'Coming soon', 'paun' ) ?></p>
 				</div>
 			</div>
