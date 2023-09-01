@@ -29,6 +29,14 @@
                 &:hover
                     @apply border-main-green
 
+.menu-item
+    &.disabled
+        @apply opacity-25
+        a
+            @apply cursor-default
+            &:hover
+                @apply border-main-green
+
 .menu-footer
     .menu-item
         @apply text-text-color text-xs sm:text-sm xl:text-lg font-sans font-extralight tracking-wide leading-9
