@@ -1,4 +1,13 @@
 jQuery(document).ready(function($) {
+
+  $('.main-menu-top-level li.disabled').hover(
+    function() {
+        $('#temp-popup').stop().fadeIn();
+    },
+    function() {
+        $('#temp-popup').stop().fadeOut();
+    }
+);
     
   
   if ($(window).width() < 640) {
