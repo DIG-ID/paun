@@ -28,6 +28,8 @@ function paun_theme_setup() {
 
 	add_image_size( 'gallery-full', 1024, false );
 
+	add_image_size( 'angebot-featured', 400, 284, true );
+
 }
 
 add_action( 'after_setup_theme', 'paun_theme_setup' );
