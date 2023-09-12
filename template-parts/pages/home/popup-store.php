@@ -1,11 +1,11 @@
-<section class="section-popup-store pb-44 bg-bg-color overflow-hidden w-full sm:w-11/12 mx-auto px-8 sm:px-0">
+<section class="section-popup-store pb-32 lg:pb-44 bg-bg-color overflow-hidden w-full sm:w-11/12 mx-auto px-8 sm:px-0">
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-8 border-t-2 border-text-color">
 		<div class="col-span-1 lg:col-span-12">
 			<h2 class="title-section"><?php the_field( 'section_popupstore_section_title' ); ?></h2>
 		</div>
 	</div>
 
-    <div class="container mx-auto grid grid-cols-5 sm:grid-cols-2 lg:grid-cols-9 pt-16">
+    <div class="container mx-auto grid grid-cols-5 sm:grid-cols-2 lg:grid-cols-9 pt-3 lg:pt-16">
 		<div class="col-span-3 lg:col-span-3">
 			<h3 class="title-normal"><?php the_field( 'section_popupstore_title' ); ?></h3>
 		</div>

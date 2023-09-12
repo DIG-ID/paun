@@ -43,11 +43,11 @@
         wp_reset_postdata();
         ?>
         </div>
-        <div class="container mx-auto lg:grid grid-cols-3 pt-24 lg:pt-28 pb-5 hidden">
+        <div class="container mx-auto lg:grid grid-cols-3 pt-24 lg:pt-28 pb-8 hidden">
             <div class="col-span-2 col-start-2 h-1">
                 <p class="border-b-2 border-text-color"></p>
             </div>
         </div>
-        <div class="container mx-auto swiper-pagination-angebote mt-8 sm:mt-0"></div><img class="float-right hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4">
+        <div class="container mx-auto swiper-pagination-angebote mt-8 sm:mt-0"></div><img id="nextSlideArrow" class="float-right hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4">
     </div>
 </section>

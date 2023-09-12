@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       });
 
+      const nextSlideArrow = document.getElementById('nextSlideArrow');
+      if (nextSlideArrow) {
+        nextSlideArrow.addEventListener('click', function () {
+          // Trigger the next slide action
+          agendaEventsSwiper.slideNext();
+        });
+      }
+
     }
     
   }, false);

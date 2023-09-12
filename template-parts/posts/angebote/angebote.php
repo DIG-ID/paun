@@ -7,7 +7,7 @@
             <h2 class="title-normal"><?php the_title(); ?></h2>
             <p class="text-body max-w-xs sm:max-w-sm"><?php the_field( 'section_intro_intro_text' ); ?></p>
             <p class="block lg:hidden max-w-full sm:max-w-md"><?php echo get_the_post_thumbnail( get_the_ID(), 'angebot-featured' ); ?></p>
-            <p class="text-bigger flex items-start my-16 !leading-6 sm:!leading-10"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4 w-5 lg:w-[30px]"><?php the_field('section_intro_schedule') ?></p>
+            <p class="text-bigger flex items-start mt-[40px] xl:my-[70px] mb-14 !leading-6 sm:!leading-10"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/schedule.svg" class="mr-4 w-5 lg:w-[30px]"><?php the_field('section_intro_schedule') ?></p>
             <div class="grid grid-cols-1 sm:grid-cols-12 lg:grid-cols-12 gap-5 lg:gap-0">
                 <div class="col-span-1 sm:col-span-7 lg:col-span-8">
                     <p class="text-body !font-bold"><?php esc_html_e( 'Beschreibung:', 'paun' ); ?></p>
@@ -38,7 +38,7 @@
         <div class="col-span-1 lg:col-span-9 lg:col-start-4 lg:pl-12 text-right sm:text-left">
             <a data-fancybox data-src="#form-popup" href="javascript:;" class="btn-order" type="button"><?php esc_html_e( 'Anfrage senden', 'paun' ) ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mx-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
         </div>
-        <div class="col-span-2 pt-11 block lg:hidden">
+        <div class="col-span-2 pt-11 hidden">
         <?php
         $previous_post = get_previous_post(); 
         if ($previous_post) {
@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 pt-12">
-        <div class="col-span-1 lg:col-span-12 pt-4 hidden lg:flex justify-end">
+        <div class="col-span-1 lg:col-span-12 pt-4 flex justify-between lg:justify-end">
             <?php
             $previous_post = get_previous_post(); 
             $next_post = get_next_post();
@@ -65,7 +65,7 @@
             }
 
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center mr-8 <?php echo is_link_available($previous_post); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mr-4 hidden lg:block -scale-x-100"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"><?php esc_html_e( 'Vorheriges', 'paun' ); ?></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center mr-8 <?php echo is_link_available($previous_post); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mr-4 hidden lg:block -scale-x-100"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-4 lg:hidden block -scale-x-100"><?php esc_html_e( 'Vorheriges', 'paun' ); ?></a>
             <a href="<?php echo esc_url($next_post_link); ?>" class="flex text-body !font-semibold items-center <?php echo is_link_available($next_post); ?>"><span><?php esc_html_e( 'Nächstes', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
         </div>
     </div>
