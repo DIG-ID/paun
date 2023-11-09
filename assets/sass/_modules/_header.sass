@@ -67,6 +67,11 @@
         .header-logo-wrapper
             @apply hidden
 
+    body:not(.home)
+        .sticky
+            .header-logo-wrapper
+                @apply pb-4 flex
+
     .header-logo-wrapper
         transition: top 0.3s ease
         
