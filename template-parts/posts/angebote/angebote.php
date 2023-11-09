@@ -65,8 +65,8 @@
             }
 
             ?>
-            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center mr-8 <?php echo is_link_available($previous_post); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mr-4 hidden lg:block -scale-x-100"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-4 lg:hidden block -scale-x-100"><?php esc_html_e( 'Vorheriges', 'paun' ); ?></a>
-            <a href="<?php echo esc_url($next_post_link); ?>" class="flex text-body !font-semibold items-center <?php echo is_link_available($next_post); ?>"><span><?php esc_html_e( 'Nächstes', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
+            <a href="<?php echo esc_url($next_post_link); ?>" class="flex text-body !font-semibold items-center mr-8 <?php echo is_link_available($next_post); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="mr-4 hidden lg:block -scale-x-100"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-4 lg:hidden block -scale-x-100"><?php esc_html_e( 'Vorheriges', 'paun' ); ?></a>
+            <a href="<?php echo esc_url($previous_post_link); ?>" class="flex text-body !font-semibold items-center <?php echo is_link_available($previous_post); ?>"><span><?php esc_html_e( 'Nächstes', 'paun' ); ?></span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4 hidden lg:block"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow_mob.svg" class="mr-0 ml-4 lg:hidden block"></a>
         </div>
     </div>
         <div id="form-popup" class="modal-content relative w-full max-w-2xl max-h-full bg-main-green sm:p-24 xl:p-14 transition-opacity duration-300 ease-in-out hidden">
