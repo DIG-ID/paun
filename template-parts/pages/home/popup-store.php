@@ -13,8 +13,8 @@
 
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 md:pt-4">
 		<div class="col-span-1 sm:col-span-1 lg:col-span-3 grid grid-cols-4">
-            <div class="col-span-1 pr-3 pt-4 md:pt-3">
-            	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-notarrow.svg">
+            <div class="col-span-1 mr-3 mt-3 md:mt-3 border-t border-text-color">
+            	
 			</div>
 			<div class="col-span-3">
             	<p class="text-bigger !leading-7 max-w-xs md:max-w-none"><?php the_field( 'section_popupstore_schedule' ); ?></p>
