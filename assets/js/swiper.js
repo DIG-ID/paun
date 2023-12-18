@@ -18,9 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const nextSlideArrow = document.getElementById('nextSlideArrow');
       if (nextSlideArrow) {
-        nextSlideArrow.addEventListener('click', function () {
+        nextSlideArrow.addEventListener('click', function (e) {
           // Trigger the next slide action
+          e.preventDefault();
           agendaEventsSwiper.slideNext();
+        });
+      }
+
+      const prevSlideArrow = document.getElementById('prevSlideArrow');
+      if (prevSlideArrow) {
+        prevSlideArrow.addEventListener('click', function (e) {
+          // Trigger the previous slide action
+          e.preventDefault();
+          agendaEventsSwiper.slidePrev();
         });
       }
 

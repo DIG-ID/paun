@@ -49,6 +49,11 @@
                 <p class="border-b-2 border-text-color"></p>
             </div>
         </div>
-        <div class="container mx-auto swiper-pagination-angebote mt-8 sm:mt-0"></div><img id="nextSlideArrow" class="float-right hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4">
+        <div class="container mx-auto relative mt-8 sm:mt-0">
+            <a id="prevSlideArrow" class="block absolute cursor-pointer top-0 right-28 z-50" href="#"><img class="ml-4 w-14" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" style="transform: scaleX(-1);"></a>
+            <div class="swiper-pagination-angebote"></div>
+            <a id="nextSlideArrow" class="block absolute cursor-pointer top-0 right-0 z-50" href="#"><img class="w-14" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-more.svg" class="ml-4"></a>
+        </div>
+        
     </div>
 </section>
