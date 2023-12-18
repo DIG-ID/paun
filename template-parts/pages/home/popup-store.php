@@ -13,7 +13,7 @@
 
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 md:pt-4">
 		<div class="col-span-1 sm:col-span-1 lg:col-span-3 grid grid-cols-4">
-            <div class="col-span-1 pr-3 pt-7 md:pt-5">
+            <div class="col-span-1 pr-3 pt-4 md:pt-3">
             	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Arrow-notarrow.svg">
 			</div>
 			<div class="col-span-3">
