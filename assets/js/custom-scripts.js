@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
       var maincontent = $('#main-content');
       var logo = $('.header-logo');
       var scrollTop = $(window).scrollTop();
-      var threshold = 70; 
+      var threshold = 0; 
       var isSticky = header.hasClass('sticky');
     
       if (scrollTop > threshold && !isSticky) {
